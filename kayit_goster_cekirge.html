@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>Hello, world!</title>
+</head>
+<body>
+
+
+<nav class="navbar navbar-dark bg-dark ">
+    <a class="navbar-brand" href="#">Gözlüyorum</a>
+    <div class="row align-items-end">
+        <div class="col">
+            <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#login-form">
+                Giriş Yap
+            </button>
+            <div class="modal fade" id="login-form" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target="#registration-form">
+                Kayıt Ol
+            </button>
+            <div class="modal fade" id="registration-form" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Gözlüyorum</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Sherlock Holmes
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Profilim</a>
+                    <a class="dropdown-item" href="#">Güvenli Çıkış</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-2 bg-dark">
+            <div class="list-group bg-dark sticky-top">
+                <li class="list-group-item list-group-item-action list-group-item-dark">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Tür,Gözlemci,İstatistik, v.s." aria-label="Ara" aria-describedby="search-button">
+                        <div class="input-group-append">
+                            <button class="btn btn-secondary" type="button" id="search-button">Ara</button>
+                        </div>
+                    </div>
+                </li>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Gözlem Kayıt İşlemleri</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Arazi Bilgileri</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Yorumlarım</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">İstatistiklerim</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Kayıt Onaylama <span class="badge badge-success badge-pill">14</span> </a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Yeni Tür Ekle</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Portal Üyelik İşlemleri</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Duyuru/Etkinlik İşlemleri</a>
+            </div>
+        </div>
+        <div class="col-sm-10 bg-dark" style="padding:0px 0px 0px 0px;">
+            <div class="container">
+                <img class="img-fluid border border-dark" id="image" src="https://pro2-bar-s3-cdn-cf3.myportfolio.com/634a4ce5bc668c7fcdfb9a7343c06e90/e199a79d0f485556f46036ad7eca0258a680dadf31899424a2bfd2668cf0f0d9086c40a0911a37bc_rw_3840.png?h=d535fea81810c5cb5385ba03360c1b7e" srcset="https://pro2-bar-s3-cdn-cf3.myportfolio.com/634a4ce5bc668c7fcdfb9a7343c06e90/e199a79d0f485556f46036ad7eca0258a680dadf31899424a2bfd2668cf0f0d9086c40a0911a37bc_rw_600.png?h=7023b65aca579a38e5db64cf7b292036 600w,https://pro2-bar-s3-cdn-cf3.myportfolio.com/634a4ce5bc668c7fcdfb9a7343c06e90/e199a79d0f485556f46036ad7eca0258a680dadf31899424a2bfd2668cf0f0d9086c40a0911a37bc_rw_1200.png?h=df3095a44cbd852935e6d0172c94ff45 1200w,https://pro2-bar-s3-cdn-cf3.myportfolio.com/634a4ce5bc668c7fcdfb9a7343c06e90/e199a79d0f485556f46036ad7eca0258a680dadf31899424a2bfd2668cf0f0d9086c40a0911a37bc_rw_1920.png?h=eb176862e93fd10fce42302753684e6c 1920w,https://pro2-bar-s3-cdn-cf3.myportfolio.com/634a4ce5bc668c7fcdfb9a7343c06e90/e199a79d0f485556f46036ad7eca0258a680dadf31899424a2bfd2668cf0f0d9086c40a0911a37bc_rw_3840.png">
+                <button id="fs-img-button" type="button"  title="Tam Ekran">⤢</button>
+                <div class="alert alert-danger" role="alert">
+                    <h4 class="alert-heading">Tür Onayı!</h4>
+                    <p>Bu kayıt son zamanda sisteme eklendi. Tür hakkında bilgilerin doğruluğunu onaylıyor musunuz?</p>
+                    <button type="button" class="btn btn-success">
+                        Evet
+                    </button>
+                    <button type="button" class="btn btn-danger">
+                        Hayır
+                    </button>
+                    <hr>
+                    <p class="mb-0">Diğer tür yetkililerinin onay durumu aşağıdaki gibidir.</p>
+                    <button type="button" class="btn btn-success">
+                        XXX XXXXXX
+                    </button>
+                    <button type="button" class="btn btn-danger">
+                        XXX XXXXXX
+                    </button>
+                    <button type="button" class="btn btn-success">
+                        YYYY YYYYYY
+                    </button>
+                    <button type="button" class="btn btn-danger">
+                        YYYY YYYYYY
+                    </button>
+                </div>
+                <div class="container">
+                    <div class="row taxon-info">
+                        <p class="taxon-info-header">Tür Bilgileri</p>
+                        <div class="col-lg-4 col-sm-12">
+                            <p class="taxon-info-category">Bilimsel Adı:
+                                <a href="#" class="taxon-info-name text-uppercase">lycaeidae</a> |
+                                <a href="#" class="taxon-info-name text-capitalize ">lycaeidae</a> |
+                                <a href="#" class="taxon-info-name font-italic text-capitalize">lycaeidae</a>
+                                <a href="#" class="taxon-info-name font-italic">candens</a>
+                            </p>
+                            <p class="taxon-info-category">Türkçe Adı | İngilizce Adı:
+                                <a href="#" class="taxon-info-name text-capitalize">Ateşbakırgüzeli</a> |
+                                <a href="#" class="taxon-info-name text-capitalize" >Balkan Copper</a>
+                            </p>
+                            <div class="alert alert-danger" role="alert">
+                                Bu türün kaydını henüz almadınız!
+                            </div>
+                            <p class="taxon-info-category">Türün ses kaydı:
+                                <audio class="player" controls class="embed-responsive-item">
+                                    <source src="sounds/demo.mp3" type="audio/mp3" />
+                                </audio>
+                            </p>
+
+
+
+
+
+
+                        </div>
+                        <div class="col-lg-4 col-sm-12">
+                            <p class="taxon-info-category">Cinsiyet:
+                                <button type="button" class="btn btn-outline-success active"><i class="fas fa-mars"></i></button>
+                                <button type="button" class="btn btn-outline-success disabled"><i class="fas fa-venus"></i></button>
+                            </p>
+
+
+                            <p class="taxon-info-category">Yaşam Evresi:
+                            <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-success disabled">larva</button>
+                                <button type="button" class="btn btn-success disabled">Tırtıl</button>
+                                <button type="button" class="btn btn-success disabled">Pupa</button>
+                                <button type="button" class="btn btn-success">Kelebek</button>
+                            </div>
+                            </p>
+                            <p class="taxon-info-category">Detay Türü:
+                            <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-success ">Kanat Altı</button>
+                                <button type="button" class="btn btn-success disabled">Kanat Üstü</button>
+                            </div>
+                            </p>
+
+                        </div>
+                        <div class="col-lg-4 col-sm-12">
+                            <p class="taxon-info-category">Dağılım Bilgisi:
+                                <button type="button" class="btn btn-danger" data-toggle="tooltip" data-placement="top" title="Dağılımda Yok">
+                                    DTDT
+                                </button>
+                                <button type="button" class="btn btn-success" data-toggle="tooltip" data-placement="top" title="Dağılımda Yer Alıyor">
+                                    DTDT
+                                </button>
+                                <button type="button" class="btn btn-danger" data-toggle="tooltip" data-placement="top" title="Dağılımda Yok">
+                                    Koçak
+                                </button>
+                                <button type="button" class="btn btn-success" data-toggle="tooltip" data-placement="top" title="Dağılımda Yer Alıyor">
+                                    Koçak
+                                </button>
+                            </p>
+                            <p class="taxon-info-category">Endemik Tür:
+                                <button type="button" class="btn btn-danger">
+                                    Hayır
+                                </button>
+                                <button type="button" class="btn btn-success">
+                                    Evet
+                                </button>
+                            </p>
+                            <p class="taxon-info-category">Koruma Durumu:
+                                <button type="button" class="btn btn-success" data-toggle="tooltip" data-placement="top" title="DTDT, Koçak ve Gözlüyorum Kayıtlarına Göre">
+                                    Yetersiz Verili
+                                </button>
+                                <button type="button" class="btn btn-warning" data-toggle="tooltip" data-placement="top" title="DTDT, Koçak ve Gözlüyorum Kayıtlarına Göre">
+                                    Tehdide Yakın
+                                </button>
+                                <button type="button" class="btn btn-info" data-toggle="tooltip" data-placement="top" title="DTDT, Koçak ve Gözlüyorum Kayıtlarına Göre">
+                                    Duyarlı
+                                </button>
+                                <button type="button" class="btn btn-danger" data-toggle="tooltip" data-placement="top" title="DTDT, Koçak ve Gözlüyorum Kayıtlarına Göre">
+                                    Kırmızı Listede
+                                </button>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row taxon-info">
+                        <p class="taxon-info-header">Kayıt Bilgileri</p>
+                        <div class="col-lg-4 col-sm-12">
+                            <img class="taxon-info-observer-avatar rounded float-left " src="images/avatar1.png">
+                            <p class="taxon-info-category">Gözlemci Adı Soyadı:
+                                <a href="#" class="taxon-info-name text-capitalize ">sherlock </a>
+                                <a href="#" class="taxon-info-name text-uppercase">holmes</a>
+                            </p>
+                            <p class="taxon-info-category">Ekipman Bilgisi:
+                                <a href="#" class="taxon-info-name text-capitalize">Canon 60D</a>
+                            </p>
+                            <p class="taxon-info-category"> Bu Türde Kayıt Sayısı:
+                                <a href="#" class="taxon-info-name text-capitalize">9898989</a>
+                            </p>
+                            <p class="taxon-info-category"> Bu Türü Kayıt Aldığı Lokasyon Sayısı:
+                                <a href="#" class="taxon-info-name text-capitalize">9898989</a>
+                            </p>
+                        </div>
+                        <div class="col-lg-4 col-sm-12">
+                            <p class="taxon-info-category">İl:
+                                <a href="#" class="taxon-info-name text-capitalize ">Erzurum</a>
+                            </p>
+                            <p class="taxon-info-category">Lokasyon:
+                                <a href="#" class="taxon-info-name text-capitalize ">Lokasyon verileri</a>
+                            </p>
+                            <p class="taxon-info-category">Yükselti:
+                                <a href="#" class="taxon-info-name text-capitalize ">800m</a>
+                            </p>
+                        </div>
+                        <div class="col-lg-4 col-sm-12">
+                            <p class="taxon-info-category">Kayıt Tarihi:
+                                <a href="#" class="taxon-info-name text-capitalize ">18.7.2017</a>
+                            </p>
+                            <p class="taxon-info-category">Yükleme Tarihi:
+                                <a href="#" class="taxon-info-name text-capitalize "> 27.7.2017 09:11:52</a>
+                            </p>
+                            <p class="taxon-info-category">Tür Hakkında İlkler:
+                                <button type="button" class="btn btn-outline-warning">Yılın İlk Kaydı</button>
+                                <button type="button" class="btn btn-outline-info">İlin İlk Kaydı </button>
+                                <button type="button" class="btn btn-outline-success">Türün İlk Kaydı</button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--user comments-->
+            <div class="container comments">
+                <div class="media">
+                    <img src="images/avatar1.png" class="align-self-start mr-3 media-avatar" style="width:60px">
+                    <div class="media-body">
+                        <h5>Media Top</h5><p style="font-size:10px"><i>20 Mart 2019 01:19</i></p>
+                        <p style="font-size: 14px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="media">
+                    <img src="images/avatar1.png" class="align-self-start mr-3 media-avatar" style="width:60px">
+                    <div class="media-body">
+                        <h5>Media Top</h5><p style="font-size:10px"><i>20 Mart 2019 01:19</i></p>
+                        <p style="font-size: 14px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="media">
+                    <img src="images/avatar1.png" class="align-self-start mr-3 media-avatar" style="width:60px">
+                    <div class="media-body">
+                        <h5>Media Top</h5><p style="font-size:10px"><i>20 Mart 2019 01:19</i></p>
+                        <p style="font-size: 14px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="comment-write">
+                    <form>
+                        <div class="input-group mb-3">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" aria-label="Recipient's username" aria-describedby="button-addon2"></textarea>
+                            <div class="input-group-append">
+                                <button class="btn btn-secondary" type="button" id="button-addon2">Yorum Yap</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+            <!--admin comments-->
+            <div class="container bg-secondary comments">
+                <h3 class="text-white">Yönetici Yorumları</h3>
+                <div class="media bg-secondary">
+                    <img src="images/avatar1.png" class="align-self-start mr-3 media-avatar" style="width:60px">
+                    <div class="media-body text-white">
+                        <h5>Media Top</h5><p style="font-size:10px"><i>20 Mart 2019 01:19</i></p>
+                        <p style="font-size: 14px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="media bg-secondary">
+                    <img src="images/avatar1.png" class="align-self-start mr-3 media-avatar" style="width:60px">
+                    <div class="media-body text-white">
+                        <h5>Media Top</h5><p style="font-size:10px"><i>20 Mart 2019 01:19</i></p>
+                        <p style="font-size: 14px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="media bg-secondary">
+                    <img src="images/avatar1.png" class="align-self-start mr-3 media-avatar" style="width:60px">
+                    <div class="media-body text-white">
+                        <h5>Media Top</h5><p style="font-size:10px"><i>20 Mart 2019 01:19</i></p>
+                        <p style="font-size: 14px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="comment-write">
+                    <form>
+                        <div class="alert alert-danger" role="alert">
+                            Bu alana yazılan yorumlar <u>sadece ilgili yöneticiler</u> tarafından görüntülenecektir.!
+                        </div>
+                        <div class="input-group mb-3">
+                            <textarea class="form-control"  id="exampleFormControlTextarea1" rows="3"  aria-label="Recipient's username" aria-describedby="button-addon2"></textarea>
+                            <div class="input-group-append">
+                                <button class="btn btn-dark" type="button" id="button-addon2">Yorum Yap</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="container-fluid">
+        <div class="row justify-content-center align-items-center p-5">
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <img class="mx-auto d-block"  src="images/logo.png">
+                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="navigation text-center">
+                    <a href="#" class="navigation_item fab fa-facebook"></a>
+                    <a href="#" class="navigation_item fab fa-twitter"></a>
+                    <a href="#" class="navigation_item fab fa-instagram"></a>
+                    <a href="#" class="navigation_item fab fa-youtube"></a>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <p class="text-white">asdasdf asdf asdf f</p>
+                <hr>
+                <p class="text-white">asdasdf asdf asdf f</p>
+                <hr>
+                <p class="text-white">asdasdf asdf asdf f</p>
+                <hr>
+                <p class="text-white">asdasdf asdf asdf f</p>
+                <hr>
+
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+
+                    <p class="text-white text-center">Copyright © 2019 - <span id="year"></span> Gözlüyorum Kelebek, her hakkı saklıdır.<br>
+                        Bu sitede yayınlanan fotoğrafların ve yazıların hakları ve sorumluluğu sahiplerine aittir.<br>
+                        Fotoğraflar, yazılar ve diğer içeriğin izin alınmadan herhangi bir ortam ve biçimde kullanılması T.C. 5846 sayılı Fikir ve Sanat Eserleri Yasası'na göre suçtur.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+    var requestFullscreen = function (ele) {
+        if (ele.requestFullscreen) {
+            ele.requestFullscreen();
+        } else if (ele.webkitRequestFullscreen) {
+            ele.webkitRequestFullscreen();
+        } else if (ele.mozRequestFullScreen) {
+            ele.mozRequestFullScreen();
+        } else if (ele.msRequestFullscreen) {
+            ele.msRequestFullscreen();
+        } else {
+            console.log('Fullscreen API is not supported.');
+        }
+    };
+
+    var exitFullscreen = function () {
+        if (document.exitFullscreen) {
+            document.exitFullscreen();
+        } else if (document.webkitExitFullscreen) {
+            document.webkitExitFullscreen();
+        } else if (document.mozCancelFullScreen) {
+            document.mozCancelFullScreen();
+        } else if (document.msExitFullscreen) {
+            document.msExitFullscreen();
+        } else {
+            console.log('Fullscreen API is not supported.');
+        }
+    };
+
+    var fsImgButton = document.getElementById('fs-img-button');
+    var image = document.getElementById('image');
+
+    fsImgButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        requestFullscreen(image);
+    });
+</script>
+<script type="text/javascript">
+    var dt = new Date();
+    document.getElementById("year").innerHTML = dt.getFullYear();
+</script>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
